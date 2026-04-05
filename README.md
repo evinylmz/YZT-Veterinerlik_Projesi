@@ -19,34 +19,4 @@ Projede kullanılan `dataset_filled.csv` veri seti, çeşitli evcil hayvanların
 
 * Python 3.8 veya üzeri
 * Geçerli bir Google Gemini API Anahtarı
-
-### Adımlar
-
-1. **Depoyu Klonlayın:**
-   ```bash
-   git clone [https://github.com/kullaniciadiniz/VetAI-Pro.git](https://github.com/kullaniciadiniz/VetAI-Pro.git)
-   cd VetAI-Pro
-Gerekli Kütüphaneleri Yükleyin:
-
-Bash
-pip install -r requirements.txt
-API Anahtarını Ayarlayın:
-Güvenlik nedeniyle API anahtarınızı kodun içine yazmayın. Streamlit dizininde .streamlit/secrets.toml dosyası oluşturun ve anahtarınızı ekleyin:
-
-Ini, TOML
-GEMINI_API_KEY = "sizin_api_anahtariniz_buraya"
-(Not: Koddaki GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"] şeklinde güncellenmelidir.)
-
-Uygulamayı Başlatın:
-
-Bash
-streamlit run Veterinerlik_Projesi.py
-🛠️ Kullanılan Teknolojiler
-Arayüz: Streamlit
-
-Veri İşleme: Pandas
-
-Makine Öğrenimi: Scikit-Learn (DecisionTreeClassifier)
-
-Üretken Yapay Zeka: Google GenAI (Gemini 2.5 Flash)   
    
